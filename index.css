@@ -1,0 +1,87 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* COMMON */
+.card {
+  border-radius: 24px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* CASE CARD */
+.case-card {
+  background: black;
+  color: white;
+}
+
+.case-image {
+  width: 100%;
+  display: block;
+}
+
+.case-footer {
+  padding: 20px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SERVICE CARD */
+.service-card {
+  padding: 40px;
+}
+
+.service-icon {
+  width: 90px;
+}
+
+.service-card h3 {
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.service-card p {
+  margin: 15px 0;
+  color: #6b7280;
+}
+
+.service-btn {
+  background: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.dark .footer {
+  background: #020617;
+}
+
+.dark .footer p,
+.dark .footer li {
+  color: #94a3b8;
+}
+
+.dark .theme-toggle span.active {
+  color: white;
+}

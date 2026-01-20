@@ -1,0 +1,164 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #0f172a; /* dark background */
+  color: #f1f5f9;
+  padding: 80px 20px 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+/* =========================
+   BRAND + MODE TOGGLE
+========================= */
+.footer-brand h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #cbd5e1;
+}
+
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.mode-toggle .toggle {
+  width: 40px;
+  height: 20px;
+  background: #64748b;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.mode-toggle .toggle::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   FOOTER LINKS
+========================= */
+
+.footer-links h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li:hover {
+  color: #2563eb;
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-social button {
+  background: #1e293b;
+  border: none;
+  color: #f1f5f9;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-social button:hover {
+  background: #2563eb;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Laptop / Tablet */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .footer-brand h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer-links ul li {
+    font-size: 13px;
+  }
+
+  .footer-social {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-social button {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}

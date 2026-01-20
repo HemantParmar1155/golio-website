@@ -1,0 +1,60 @@
+/* PROJECTS SECTION WRAPPER */
+.project-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+/* SECTION HEADER */
+.project-section > div:first-child {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.project-section p {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* PROJECT GRID wrapper already styled in Cards.css */
+/* Make sure the JSX wraps the grid in .project-section for proper spacing */
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .project-section h2 {
+    font-size: 32px;
+  }
+
+  .project-section p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-section {
+    padding: 60px 20px;
+  }
+
+  .project-section h2 {
+    font-size: 28px;
+  }
+
+  .project-section p {
+    font-size: 14px;
+  }
+}

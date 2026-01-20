@@ -1,0 +1,83 @@
+/* =========================
+   TRUSTED / COMPANIES SECTION
+========================= */
+
+.trusted-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* HEADER TEXT */
+.trusted-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.trusted-text span {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* LOGOS GRID */
+.trusted-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.logo-card {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-card img {
+  width: 100%;
+  object-fit: contain;
+  filter: grayscale(80%);
+  transition: all 0.3s ease;
+}
+
+.logo-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .trusted-logos {
+    gap: 30px;
+  }
+
+  .logo-card {
+    width: 100px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .trusted-logos {
+    gap: 20px;
+  }
+
+  .logo-card {
+    width: 80px;
+  }
+
+  .trusted-text {
+    font-size: 16px;
+  }
+}
